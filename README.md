@@ -8,3 +8,7 @@
 > Take it as it is 😉
 
 This repo contains an attempt at the analysis of the [kinematics](./kinematics/README.md), and will soon contain the code to run and simulate the CNC with ROS, and at a later stage, it will later contain build documentation (when I win the lottery)
+
+The final goal is to cut joints like this: 
+
+<p align="center"> <img src="./assets/images/roundwood_joint.JPG" height="400" />

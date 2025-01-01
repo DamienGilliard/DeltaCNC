@@ -1,0 +1,25 @@
+[0.005s] Invoking command in '/home/damien/DeltaCNC/ROS2_sim/build/delta_cnc_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/damien/DeltaCNC/ROS2_sim/build/delta_cnc_controller -- -j8 -l8
+[0.063s] [ 50%] [32mBuilding CXX object CMakeFiles/delta_cnc_simulation.dir/src/delta_cnc_simulation.cc.o[0m
+[1.358s] [100%] [32m[1mLinking CXX executable delta_cnc_simulation[0m
+[1.431s] [100%] Built target delta_cnc_simulation
+[1.438s] Invoked command in '/home/damien/DeltaCNC/ROS2_sim/build/delta_cnc_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/damien/DeltaCNC/ROS2_sim/build/delta_cnc_controller -- -j8 -l8
+[1.444s] Invoking command in '/home/damien/DeltaCNC/ROS2_sim/build/delta_cnc_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/damien/DeltaCNC/ROS2_sim/build/delta_cnc_controller
+[1.453s] -- Install configuration: ""
+[1.453s] -- Installing: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/lib/delta_cnc_controller/delta_cnc_simulation
+[1.453s] -- Set non-toolchain portion of runtime path of "/home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/lib/delta_cnc_controller/delta_cnc_simulation" to ""
+[1.453s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/ament_index/resource_index/package_run_dependencies/delta_cnc_controller
+[1.453s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/ament_index/resource_index/parent_prefix_path/delta_cnc_controller
+[1.453s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/environment/ament_prefix_path.sh
+[1.453s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/environment/ament_prefix_path.dsv
+[1.453s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/environment/path.sh
+[1.453s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/environment/path.dsv
+[1.453s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/local_setup.bash
+[1.453s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/local_setup.sh
+[1.453s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/local_setup.zsh
+[1.454s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/local_setup.dsv
+[1.454s] -- Installing: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/package.dsv
+[1.454s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/ament_index/resource_index/packages/delta_cnc_controller
+[1.454s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/cmake/delta_cnc_controllerConfig.cmake
+[1.454s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/cmake/delta_cnc_controllerConfig-version.cmake
+[1.454s] -- Up-to-date: /home/damien/DeltaCNC/ROS2_sim/install/delta_cnc_controller/share/delta_cnc_controller/package.xml
+[1.455s] Invoked command in '/home/damien/DeltaCNC/ROS2_sim/build/delta_cnc_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/damien/DeltaCNC/ROS2_sim/build/delta_cnc_controller

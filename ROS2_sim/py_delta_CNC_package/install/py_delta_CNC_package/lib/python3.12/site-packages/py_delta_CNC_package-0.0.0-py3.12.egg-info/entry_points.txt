@@ -1,0 +1,2 @@
+[console_scripts]
+my_node = py_delta_CNC_package.my_node:main

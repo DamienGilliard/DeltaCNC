@@ -1,0 +1,36 @@
+running egg_info
+creating build/py_delta_CNC_package/py_delta_CNC_package.egg-info
+writing build/py_delta_CNC_package/py_delta_CNC_package.egg-info/PKG-INFO
+writing dependency_links to build/py_delta_CNC_package/py_delta_CNC_package.egg-info/dependency_links.txt
+writing entry points to build/py_delta_CNC_package/py_delta_CNC_package.egg-info/entry_points.txt
+writing requirements to build/py_delta_CNC_package/py_delta_CNC_package.egg-info/requires.txt
+writing top-level names to build/py_delta_CNC_package/py_delta_CNC_package.egg-info/top_level.txt
+writing manifest file 'build/py_delta_CNC_package/py_delta_CNC_package.egg-info/SOURCES.txt'
+reading manifest file 'build/py_delta_CNC_package/py_delta_CNC_package.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/py_delta_CNC_package/py_delta_CNC_package.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/build/py_delta_CNC_package/build
+creating /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/build/py_delta_CNC_package/build/lib
+creating /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/build/py_delta_CNC_package/build/lib/py_delta_CNC_package
+copying py_delta_CNC_package/__init__.py -> /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/build/py_delta_CNC_package/build/lib/py_delta_CNC_package
+copying py_delta_CNC_package/my_node.py -> /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/build/py_delta_CNC_package/build/lib/py_delta_CNC_package
+running install
+running install_lib
+creating /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/lib/python3.12/site-packages/py_delta_CNC_package
+copying /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/build/py_delta_CNC_package/build/lib/py_delta_CNC_package/__init__.py -> /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/lib/python3.12/site-packages/py_delta_CNC_package
+copying /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/build/py_delta_CNC_package/build/lib/py_delta_CNC_package/my_node.py -> /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/lib/python3.12/site-packages/py_delta_CNC_package
+byte-compiling /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/lib/python3.12/site-packages/py_delta_CNC_package/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/lib/python3.12/site-packages/py_delta_CNC_package/my_node.py to my_node.cpython-312.pyc
+running install_data
+creating /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/share/ament_index
+creating /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/share/ament_index/resource_index
+creating /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/share/ament_index/resource_index/packages
+copying resource/py_delta_CNC_package -> /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/share/ament_index/resource_index/packages
+copying package.xml -> /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/share/py_delta_CNC_package
+running install_egg_info
+Copying build/py_delta_CNC_package/py_delta_CNC_package.egg-info to /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/lib/python3.12/site-packages/py_delta_CNC_package-0.0.0-py3.12.egg-info
+running install_scripts
+Installing my_node script to /home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/install/py_delta_CNC_package/lib/py_delta_CNC_package
+writing list of installed files to '/home/damien/DeltaCNC/ROS2_sim/py_delta_CNC_package/build/py_delta_CNC_package/install.log'

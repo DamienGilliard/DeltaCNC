@@ -12,3 +12,20 @@ This repo contains an attempt at the analysis of the [kinematics](./kinematics/R
 The final goal is to cut joints like this: 
 
 <p align="center"> <img src="./assets/images/roundwood_joint.JPG" height="400" />
+
+### Architecture
+
+The current (and very primitive) architecture is the following:
+
+```mermaid
+flowchart
+        GCODE@{ shape: doc, label: "GCode File"} -.-> A(["ROS2 node reads GCode line"])
+        A --> B(["ROS2 node plans trajectory"])
+        B --> C(["ROS2 node interfaces with RP2040 CAN controller"])
+        C --> M(["ROS2 node monitors state and follow GCode step completion"])
+        M --> A
+        C <--"over serial"--> D["RP2040"]
+        D <--"over CAN"-->E("Odrive_1")
+        D <--"over CAN"-->F("Odrive_2")
+        D <--"over CAN"-->G("Odrive_3")
+```

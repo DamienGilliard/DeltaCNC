@@ -1,0 +1,1 @@
+This part of the repo contains simulation for the motion contol of the CNC, via a ROS2 workspace.

@@ -1,0 +1,15 @@
+{
+  "package_name": "tutorial_interfaces",
+  "output_dir": "/home/damien/DeltaCNC/ROS2_sim/tutorial_interfaces/build/rosidl_generator_type_description/tutorial_interfaces",
+  "idl_tuples": [
+    "/home/damien/DeltaCNC/ROS2_sim/tutorial_interfaces/build/rosidl_adapter/tutorial_interfaces:msg/Num.idl",
+    "/home/damien/DeltaCNC/ROS2_sim/tutorial_interfaces/build/rosidl_adapter/tutorial_interfaces:msg/Sphere.idl",
+    "/home/damien/DeltaCNC/ROS2_sim/tutorial_interfaces/build/rosidl_adapter/tutorial_interfaces:srv/AddThreeInts.idl"
+  ],
+  "include_paths": [
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

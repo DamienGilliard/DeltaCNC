@@ -7,13 +7,14 @@ import os
 import threading
 
 from delta_cnc_interface.msg import Position, ConfirmationMessage
+from geometry_msgs.msg import Pose
 
 class Instruction:
     def __init__(self, line_of_command):
         for part in line_of_command.split():
             if part.startswith("("):
                 self.type_of_instruction = "comment"
-                break  # Ignore comments
+                break
             if part.startswith("T"):
                 self.is_tool_change = True
                 self.tool_number = int(part[1:])
@@ -50,7 +51,7 @@ class Instruction:
             else:
                 self.is_unknown_command = True
                 self.type_of_instruction = "unknown"
-    
+
     def __str__(self):
         return f"line of instruction of type:{self.type_of_instruction}"
 
@@ -58,14 +59,14 @@ class GCodeReader(Node):
 
     def __init__(self):
         super().__init__('gcode_reader')
-        self.publisher_ = self.create_publisher(Position, 'gcode_position', 10)
+        self.publisher_ = self.create_publisher(Pose, 'gcode_position', 10)
         self.subscription = self.create_subscription(
             ConfirmationMessage,
             'gcode_position_confirmation_message',
             self.listener_callback,
             10)
         self.confirmation_event = threading.Event()
-        self.subscription  # prevent unused variable warning
+        self.subscription
         self.tot_n_instructions = 0
 
     def listener_callback(self, msg):
@@ -86,14 +87,16 @@ class GCodeReader(Node):
                 self.publish_position(instruction)
 
     def publish_position(self, instruction):
-        msg = Position()
-        msg.pose.position.x = instruction.x if hasattr(instruction, 'x') else 0.0
-        msg.pose.position.y = instruction.y if hasattr(instruction, 'y') else 0.0
-        msg.pose.position.z = instruction.z if hasattr(instruction, 'z') else 0.0
+        # ✅ FIX: Create and publish Pose correctly
+        msg = Pose()
+        msg.position.x = instruction.x if hasattr(instruction, 'x') else 0.0
+        msg.position.y = instruction.y if hasattr(instruction, 'y') else 0.0
+        msg.position.z = instruction.z if hasattr(instruction, 'z') else 0.0
+        msg.orientation.w = 1.0
+
         self.confirmation_event.clear()
         self.publisher_.publish(msg)
-        self.get_logger().info(f'Publishing position: x={msg.pose.position.x}, y={msg.pose.position.y}, z={msg.pose.position.z}')
-        # Wait for confirmation before proceeding
+        self.get_logger().info(f'Publishing: x={msg.position.x}, y={msg.position.y}, z={msg.position.z}')
         if not self.confirmation_event.wait(timeout=60):
             self.get_logger().warn('No confirmation received within timeout period.')
 
@@ -104,8 +107,6 @@ def main(args=None):
     parser.add_argument('file_path', type=str, help='Path to the GCode file')
     args = parser.parse_args()
 
-    gcode_reader = GCodeReader()
-    
     gcode_reader = GCodeReader()
     gcode = gcode_reader.read_gcode(args.file_path)
 

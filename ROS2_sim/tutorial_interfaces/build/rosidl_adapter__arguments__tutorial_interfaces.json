@@ -1,0 +1,8 @@
+{
+  "package_name": "tutorial_interfaces",
+  "non_idl_tuples": [
+    "/home/damien/DeltaCNC/ROS2_sim/tutorial_interfaces:msg/Num.msg",
+    "/home/damien/DeltaCNC/ROS2_sim/tutorial_interfaces:msg/Sphere.msg",
+    "/home/damien/DeltaCNC/ROS2_sim/tutorial_interfaces:srv/AddThreeInts.srv"
+  ]
+}
